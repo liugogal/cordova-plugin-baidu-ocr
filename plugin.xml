@@ -2,12 +2,12 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
         id="cordova-plugin-baidu-ocr"
-        version="1.0.0">
+        version="1.0.1">
 
     <name>BaiduOcr</name>
     <description>百度AI插件</description>
     <license>MIT</license>
-    <author>liugogal</author>
+    <author>liu-gogal</author>
     <keywords>Baidu, Ocr, AI</keywords>
 
     <repo>https://github.com/liugogal/cordova-plugin-baidu-ocr</repo>
@@ -19,7 +19,7 @@
         <engine name="cordova-android" version=">=6.3.0"/>
     </engines>
     <js-module src="www/BaiduOcr.js" name="BaiduOcr">
-        <clobbers target="cordova.plugins.BaiduOcr"/>
+        <clobbers target="BaiduOcr"/>
     </js-module>
 
     <platform name="android">

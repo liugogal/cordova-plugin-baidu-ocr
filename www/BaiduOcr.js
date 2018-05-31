@@ -120,5 +120,4 @@ BaiduOcr.prototype.destroy = function (successCallback, errorCallback) {
     ]);
 };*/
 
-var baiduOcr = new BaiduOcr();
-module.exports = baiduOcr;
+module.exports = BaiduOcr;

@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-baidu-ocr",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Baidu Ocr",
   "cordova": {
     "id": "cordova-plugin-baidu-ocr",
@@ -33,7 +33,7 @@
       }
     }
   },
-  "author": "liugogal",
+  "author": "liu-gogal",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/liugogal/cordova-plugin-baidu-ocr/issues"
