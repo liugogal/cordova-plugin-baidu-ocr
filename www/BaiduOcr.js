@@ -43,7 +43,7 @@ var BaiduOcr = {
      * @param errorCallback
      * @param params 其中的contentType取值： IDCardFront(正面),IDCardBack(反面)
      */
-    scanId: function (successCallback, errorCallback, params) {
+    scanId: function (params, successCallback, errorCallback) {
 
         if (errorCallback == null) {
             errorCallback = function () {
