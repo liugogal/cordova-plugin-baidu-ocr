@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cordova-plugin-baidu-ocr"
+        version="1.0.0">
+
+    <name>BaiduOcr</name>
+    <description>百度AI插件</description>
+    <license>MIT</license>
+    <author>liugogal</author>
+    <keywords>Baidu, Ocr, AI</keywords>
+
+    <repo>https://github.com/liugogal/cordova-plugin-baidu-ocr</repo>
+    <issue>https://github.com/liugogal/cordova-plugin-baidu-ocr/issues</issue>
+
+
+    <engines>
+        <engine name="cordova" version=">=7.1.0"/>
+        <engine name="cordova-android" version=">=6.3.0"/>
+    </engines>
+    <js-module src="www/BaiduOcr.js" name="BaiduOcr">
+        <clobbers target="cordova.plugins.BaiduOcr"/>
+    </js-module>
+
+    <platform name="android">
+        <source-file src="src/android/com/huatuo/cordova/BaiduOcr.java"
+                     target-dir="src/com/huatuo/cordova"/>
+        <source-file src="src/android/com/huatuo/cordova/FileUtil.java"
+                     target-dir="src/com/huatuo/cordova"/>
+        <source-file src="src/android/com/huatuo/cordova/JsonUtils.java"
+                     target-dir="src/com/huatuo/cordova"/>
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="BaiduOcr">
+                <param name="android-package" value="com.huatuo.cordova.BaiduOcr"/>
+            </feature>
+        </config-file>
+        <config-file target="AndroidManifest.xml" parent="/manifest" mode="merge">
+            <uses-permission android:name="android.permission.INTERNET"/>
+            <uses-permission android:name="android.permission.CAMERA"/>
+            <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+            <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+        </config-file>
+        <framework src="src/android/baiduocr.gradle" custom="true" type="gradleReference"/>
+        <framework src="com.android.support:appcompat-v7:25.4.0"/>
+
+        <resource-file src="src/android/jniLibs/arm64-v8a/libocr-sdk.so" target="jniLibs/arm64-v8a/libocr-sdk.so"/>
+        <resource-file src="src/android/jniLibs/armeabi/libocr-sdk.so" target="jniLibs/armeabi/libocr-sdk.so"/>
+        <resource-file src="src/android/jniLibs/armeabi-v7a/libocr-sdk.so" target="jniLibs/armeabi-v7a/libocr-sdk.so"/>
+        <resource-file src="src/android/jniLibs/x86/libocr-sdk.so" target="jniLibs/x86/libocr-sdk.so"/>
+
+
+        <lib-file src="src/android/ocr-sdk.jar"/>
+        <lib-file src="src/android/ocr_ui-release.aar"/>
+
+        <hook src="hooks/copy-license.js" type="after_prepare"/>
+
+    </platform>
+</plugin>

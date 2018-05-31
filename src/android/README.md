@@ -1,0 +1,1 @@
+The Android .aar sources are [here](https://github.com/liugogal/cordova-plugin-baidu-ocr).

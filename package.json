@@ -1,0 +1,42 @@
+{
+  "name": "cordova-plugin-baidu-ocr",
+  "version": "1.0.0",
+  "description": "Baidu Ocr",
+  "cordova": {
+    "id": "cordova-plugin-baidu-ocr",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liugogal/cordova-plugin-baidu-ocr.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "ecosystem:phonegap",
+    "cordova-ios",
+    "cordova-android",
+    "cordova-windows",
+    "cordova-browser",
+    "cordova:plugin"
+  ],
+  "engines": {
+    "cordovaDependencies": {
+      "7.0.0": {
+        "cordova-android": ">=6.3.0"
+      },
+      "7.1.0": {
+        "cordova-android": ">=6.3.0",
+        "cordova": ">=7.1.0"
+      }
+    }
+  },
+  "author": "liugogal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/liugogal/cordova-plugin-baidu-ocr/issues"
+  },
+  "homepage": "https://github.com/liugogal/cordova-plugin-baidu-ocr#readme"
+}
