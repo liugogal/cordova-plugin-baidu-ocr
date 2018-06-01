@@ -7,6 +7,7 @@ deploy:
   email: 259394345@qq.com
   api_key:
     secure: IMJst9Gsfj48UKmQ2+gSlrGvngEgdQiROgZ3PEcoODbKeK8eE13O1eU6btqB8ev1Mfln8kNSX3HC94dzd/b+jsqn6YwVmZqGOHavpeKwrrpHqVm3wsQPv2F0CfR7pdI7LY03w+XzhG9dNmDK3FtPsHrOs0X70lHW3E15YTLfB4u5KAaRBeO6SLIzRO4PN6EWiBFMbdk8L0SsE7yo4wh/sACbNwZyAVJZZ8dW1BDS2NvtT0TlGPzbcITq+YMo5kiyqvDmoPPLXrHz8Z0uH1e5U28aLs1DMMEYIYyXybhWvGzxlEXDDUKJTWdyBbQT7Iud8K8LDTmgpU3yYasl4TUfXRLqu4WNaEbXxzP076mr1KsoII3lvcg8IrwlmhwxSoDMWmQugkuHGVUCNypH1Pivgc/9RmLQyrNt8zGp0c80+4bm/CyJE14MEmr4CJugqLa6lcDykjxBSb/DzpshrS/gu4hkjY5zRplS6qKaU5bOBYhaE/7xh3BWh2kpsL9YSXl3ntDVhwDWv3hujBZ6gfRlZQX+ILfiu0NMpAZikon4P+V8011UPx4U3ZzEP7ge5bOLe3KkQAenSmq7BNrVJVeMh3j9ncCdY03EbR00y2P3w4vZOm0l36Ubkf+cvjTAYQFNG++N51X2AZPI+oo8wz9ItCfbw5Fie1CpO1h1SfD+Ybk=
+  skip_cleanup: true
   on:
     tags: true
     repo: liugogal/cordova-plugin-baidu-ocr
