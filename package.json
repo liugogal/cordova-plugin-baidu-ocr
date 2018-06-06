@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-baidu-ocr",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Baidu Ocr",
   "cordova": {
     "id": "cordova-plugin-baidu-ocr",
