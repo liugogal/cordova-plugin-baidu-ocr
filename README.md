@@ -75,3 +75,65 @@ A full example could be:
             console.log(error)
         });
 ```
+
+
+### ionic-native ###
+install：
+```bash
+    npm i @liu-gogal/baidu-ocr --save
+```
+app.module.ts:
+```js
+    import {BaiduOcr} from "@liu-gogal/baidu-ocr";
+    @NgModule({
+        providers: [
+            BaiduOcr
+        ]
+    })
+    export class AppModule {}
+```
+view.page.ts:
+```js
+    import {BaiduOcr} from "@liu-gogal/baidu-ocr";
+    @IonicPage()
+    @Component({
+        selector: 'view-page',
+        templateUrl: 'view-page.html'
+    })
+    export class ViewPage {
+        constructor(private baiduOcr: BaiduOcr) {}
+        
+        doInit() {
+            this.baiduOcr.init()
+                .then((result)=>{
+                    
+                })
+                .catch((error)=>{
+                    
+                });
+        }
+        
+        doDestroy() {
+            this.baiduOcr.destroy()
+                .then((result)=>{
+                    
+                })
+                .catch((error)=>{
+                    
+                });
+        }
+        
+        doScanId() {
+            this.baiduOcr.scanId({contentType: 'IDCardFront', nativeEnable: true, nativeEnableManual: true})
+                .then((result)=>{
+                    if (result.message == "OK") {
+                        console.log(result.data);
+                    }
+                })
+                .catch((error)=>{
+                    
+                });
+        }
+        
+    }
+```
